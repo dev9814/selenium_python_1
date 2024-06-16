@@ -4,11 +4,15 @@ from selenium import webdriver
 
 driver = webdriver.Firefox()
 
-time.sleep(5000)
-
 driver.maximize_window()
 
-time.sleep(5000)
+driver.get("https://tutorialsninja.com/demo/")
+
+time.sleep(3)
+
+driver.minimize_window()
 
 driver.quit()
+
+
 
